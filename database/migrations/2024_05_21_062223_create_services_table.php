@@ -13,6 +13,32 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->string('number');
+            /*-----------------------------------*/
+            $table->string('client_name');
+            $table->string('client_email');
+            $table->string('client_phone');
+            /*-----------------------------------*/
+            $table->date('start_date');
+            $table->date('End_forecast');
+            $table->date('end_date');
+            /*-----------------------------------*/
+            $table->text('service_type');
+            $table->integer('value');
+            $table->text('description');
+            /*-----------------------------------*/
+            $table->string('status');
+            $table->string('payment_method');
+            $table->string('payment_status');
+            /*-----------------------------------*/
+            $table->string('payment_date');
+            $table->string('payment_value');
+            $table->string('payment_form');
+            /*-----------------------------------*/
+            $table->string('photo_file');//photo of the contract
+            $table->string('proposal_file');//proposal of the contract
+            $table->string('contract_file');//contract file
+
             $table->timestamps();
         });
     }

@@ -14,30 +14,52 @@ return new class extends Migration
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
             $table->string('number');
-            /*-----------------------------------*/
+            $table->string('name');
+            /*--------   EMPRESA  ------------*/
+            $table->string('company_name');
+            $table->string('cnpj');
+            $table->string('address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip_code');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('site');
+            $table->string('responsible_name');
+            $table->string('responsible_cpf');     
+
+             /*--------  CLIENTE  ------------*/
             $table->string('client_name');
-            $table->string('client_email');
+            $table->string('client_document');
+            $table->string('client_address');
+            $table->string('client_city');
+            $table->string('client_state');
+            $table->string('client_zip_code');
             $table->string('client_phone');
-            /*-----------------------------------*/
+            $table->string('client_email');
+            
+
+              /*--------  DETALHES DO CONTRATO  ------------*/
+            $table->string('name_project');
+            $table->string('service_type');
+            $table->Text('description');
+            $table->string('manutention');
+            
+
+
+              /*--------  DATAS E PRAZO  ------------*/
             $table->date('start_date');
-            $table->date('End_forecast');
-            $table->date('end_date');
-            /*-----------------------------------*/
-            $table->text('service_type');
-            $table->interger('value');
-            $table->text('description');
-            /*-----------------------------------*/
-            $table->string('status');
+            $table->date('end_forecast');
+    
+
+              /*--------  FORMAS DE PAGAMENTO  ------------*/
             $table->string('payment_method');
-            $table->string('payment_status');
-            /*-----------------------------------*/
             $table->string('payment_date');
             $table->string('payment_value');
-            $table->string('payment_form');
-            /*-----------------------------------*/
-            $table->string('photo_file');//photo of the contract
-            $table->string('proposal_file');//proposal of the contract
-            $table->string('contract_file');//contract file
+
+
+
+
 
 
             $table->timestamps();

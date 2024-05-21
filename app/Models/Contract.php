@@ -11,29 +11,40 @@ class Contract extends Model
     
     protected $fillable = [
         'number',
-          /*-----------------------------------*/
+        'name',
+        /*--------   EMPRESA  ------------*/
+        'company_name',
+        'cnpj',
+        'address',
+        'city',
+        'state',
+        'zip_code',
+        'phone',
+        'email',
+        'site',
+        'responsible_name',
+        'responsible_cpf',
+        /*--------  CLIENTE  ------------*/
         'client_name',
-        'client_email',
+        'client_document',
+        'client_address',
+        'client_city',
+        'client_state',
+        'client_zip_code',
         'client_phone',
-          /*-----------------------------------*/
+        'client_email',
+        /*--------  DETALHES DO CONTRATO  ------------*/
+        'name_project',
+        'service_type',
+        'description',
+        'manutention',
+        /*--------  DATAS E PRAZO  ------------*/
         'start_date',
         'end_forecast',
-        'end_date',
-          /*-----------------------------------*/
-        'service_type',
-        'value',
-        'description',
-          /*-----------------------------------*/
-        'status',
+        /*--------  FORMAS DE PAGAMENTO  ------------*/
         'payment_method',
-        'payment_status',
-          /*-----------------------------------*/
         'payment_date',
         'payment_value',
-        'payment_form',
-          /*-----------------------------------*/
-        'photo_file',
-        'proposal_file',
-        'contract_file',
+      
     ];
 }

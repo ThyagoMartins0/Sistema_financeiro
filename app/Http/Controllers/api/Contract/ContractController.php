@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\api\Contract;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class N_ServicesController extends Controller
+class ContractController extends Controller
 {
     /**
      * Display a listing of the resource.

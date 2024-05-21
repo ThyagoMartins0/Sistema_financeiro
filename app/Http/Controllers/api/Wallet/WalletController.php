@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\api\Wallet;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DebtController extends Controller
+class WalletController extends Controller
 {
     /**
      * Display a listing of the resource.
